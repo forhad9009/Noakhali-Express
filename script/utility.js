@@ -69,6 +69,7 @@ applyButton.addEventListener('click', function(){
         const discountGrandTotal = document.getElementById('grand-total');
         discountGrandTotal.innerText = totalT - discountAmount;
         document.getElementById('coupon-input').value = '';
+        return discountGrandTotal;
         
     }
 })
