@@ -199,7 +199,7 @@
                             <h2 class="font-bold">Class</h2>
                             <h2 class="font-bold">Price</h2>
                         </div>
-                        <div id="seat-title" class="flex justify-between font-bold uppercase">
+                        <div id="seat-title" class="flex flex-col justify-between font-bold uppercase">
                             <!-- <h2 class="font-bold">C2</h2>
                             <h2 class="font-bold">Economy</h2>
                             <h2 class="font-bold">550</h2> -->
@@ -273,6 +273,7 @@
             for(const cSeat of seatCC){
                 cSeat.addEventListener('click', function(){
                     cSeat.style.background = 'green';
+                    cSeat.disabled = true;
 
                 })
             }
