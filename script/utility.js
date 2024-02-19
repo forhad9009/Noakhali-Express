@@ -7,7 +7,7 @@ let count2 = 40;
 
 for(const seatNumber of allSeatNumber){
     seatNumber.addEventListener('click', function(event){
-        
+    
         count = count + 1;
         count2 = count2 -1;
 
@@ -60,7 +60,7 @@ applyButton.addEventListener('click', function(){
     
     const coupon = document.getElementById('coupon-input').value;
       
-    if(coupon === 'NEW15'){
+    if(coupon === 'NEW15' || coupon === 'Couple 20'){
 
          const total = document.getElementById('total-price').innerText;
          const totalT = parseInt(total);
@@ -72,3 +72,6 @@ applyButton.addEventListener('click', function(){
         
     }
 })
+
+
+
